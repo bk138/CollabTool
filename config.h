@@ -19,7 +19,7 @@
 #define V_DFLTRCONLY  _T("win2vnc.exe %a")
 #define V_DFLTVIEWER  _T("vncviewer.exe %a::%p")
 #else
-#define V_DFLTRCONLY  _T("x2vnc -noreconnect %a:0")
+#define V_DFLTRCONLY  _T("x2vnc -north -noreconnect %a:0")
 #define V_DFLTVIEWER  _T("vncviewer %a::%p")
 #endif
 
