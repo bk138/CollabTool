@@ -6,7 +6,7 @@
 
 #include "MyFrameMain.h"
 #include "MyDialogSettings.h"
-#include "../config.h"
+#include "../dfltcfg.h"
 #include "../CollabToolApp.h"
 
 
@@ -493,7 +493,7 @@ void MyFrameMain::help_about(wxCommandEvent &event)
   info.SetIcon(icon);
   info.SetName(wxT("CollabKit Client"));
   info.SetVersion(wxT(VERSION));
-  info.SetDescription(_("This is the CollabKit Client, a tool to connect to a CollabKit server and share windows.\n"));
+  info.SetDescription(_("This is the CollabKit Client, a tool to connect to a CollabKit server and share windows."));
   info.SetCopyright(wxT(COPYRIGHT));
   
   wxAboutBox(info); 

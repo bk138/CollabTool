@@ -12,7 +12,7 @@
 
 
 #define VERSION "0.1"
-#define COPYRIGHT "Copyright (C) 2009 Christian Beier <dontmind@freeshell.org>"
+#define COPYRIGHT "Copyright (C) 2009-2010 Christian Beier <dontmind@freeshell.org>"
 
 
 class CollabToolApp: public wxApp 
