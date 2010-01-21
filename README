@@ -2,11 +2,36 @@
 CollabTool - CollabKit Client
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+CollabTool is a simple wrapper around vncviewer and x2vnc/win2vnc
+with built-in zeroconf service discovery. Aditionally, it wraps 
+around x11vnc/WinVNC to provide a simple way to share windows to
+the CollabKit server.
+
+
 directory layout:
+
     wxServDisc: Zeroconf module. 
-                Get it at https://sourceforge.net/projects/wxservdisc/
     gui:        well, the gui (made with wxglade)
     contrib:    other tools used by CollabTool
+
     
 prerequisites:
+
     wxWidgets 2.8
+
+
+to build:
+
+    ./autogen.sh && make
+    
+           OR (when building for Win32 with mingw):
+
+    ./autogen.sh --build=<your build target name> --host=i586-mingw32msvc \
+                 --with-wx-config=<your win32 wx-config>  && make
+
+
+       OR (when building under OS X):
+       
+    ./autogen.sh && make && make appbundle
+
+
