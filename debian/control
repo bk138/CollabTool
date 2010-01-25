@@ -8,7 +8,7 @@ Homepage: http://github.com/bk138/CollabTool
 
 Package: collabtool
 Architecture: any
-Depends: ${shlibs:Depends}, x11vnc, vncviewer, x2vnc
+Depends: ${shlibs:Depends}, x11vnc, vncviewer|vnc-viewer, x2vnc
 Description: The CollabKit Client
  CollabTool is a simple wrapper around vncviewer and x2vnc/win2vnc
  with built-in zeroconf service discovery. Aditionally, it wraps 

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec=collabtool
+Icon=collabtool
+Name=CollabTool
+Type=Application
+Comment=The CollabKit client
+Terminal=false
+StartupNotify=false
+Categories=Application;Network;
+

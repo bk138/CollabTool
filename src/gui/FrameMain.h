@@ -13,7 +13,7 @@
 #include "bitmapFromMem.h"
 #ifndef ICON_XPM
 #define ICON_XPM
-#include "res/icon.xpm"
+#include "res/collabtool.xpm"
 #endif
 
 // end wxGlade

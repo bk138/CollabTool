@@ -5,14 +5,23 @@ SUBDIRS = \
 	src
 
 
-collabtooldocdir = ${prefix}/share/doc/collabtool
+collabtooldocdir = ${datadir}/doc/collabtool
 collabtooldoc_DATA = \
 	README\
 	AUTHORS\
 	ChangeLog\
 	NEWS
 
-EXTRA_DIST = $(collabtooldoc_DATA)
+Applicationsdir = $(datadir)/applications/
+Applications_DATA = src/collabtool.desktop
+
+pixmapdir = $(datadir)/pixmaps
+pixmap_DATA = src/gui/res/collabtool.xpm
+
+
+EXTRA_DIST = $(collabtooldoc_DATA) \
+             $(Applications_DATA) \
+             $(pixmap_DATA)
 
 
 if DARWIN
