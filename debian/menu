@@ -1,0 +1,2 @@
+?package(collabtool):needs="X11" section="Applications/Network/Communication"\
+  title="CollabTool" command="/usr/bin/collabtool"
