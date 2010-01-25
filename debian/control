@@ -1,5 +1,5 @@
 Source: collabtool
-Section: unknown
+Section: utils
 Priority: extra
 Maintainer: Christian Beier <dontmind@freeshell.org>
 Build-Depends: debhelper (>= 7), autotools-dev, libwxgtk2.8-dev
@@ -9,7 +9,7 @@ Homepage: http://github.com/bk138/CollabTool
 Package: collabtool
 Architecture: any
 Depends: ${shlibs:Depends}, x11vnc, vncviewer, x2vnc
-Description: CollabTool is the CollabKit Client
+Description: The CollabKit Client
  CollabTool is a simple wrapper around vncviewer and x2vnc/win2vnc
  with built-in zeroconf service discovery. Aditionally, it wraps 
  around x11vnc/WinVNC to provide a simple way to share windows to

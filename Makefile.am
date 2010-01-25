@@ -5,13 +5,11 @@ SUBDIRS = \
 	src
 
 
-collabtooldocdir = ${prefix}/doc/collabtool
+collabtooldocdir = ${prefix}/share/doc/collabtool
 collabtooldoc_DATA = \
 	README\
-	COPYING\
 	AUTHORS\
 	ChangeLog\
-	INSTALL\
 	NEWS
 
 EXTRA_DIST = $(collabtooldoc_DATA)
