@@ -64,3 +64,11 @@ endif
 
 
 
+
+if MINGW
+nsis_installer: src/collabtool.exe collabtool.nsi README NEWS COPYING
+	cat README | unix2dos > README.TXT
+	cat NEWS | unix2dos > NEWS.TXT
+	cat COPYING | unix2dos > COPYING.TXT
+	makensis collabtool.nsi 
+endif
