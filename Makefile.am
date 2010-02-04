@@ -66,9 +66,10 @@ endif
 
 
 if MINGW
-nsis_installer: src/collabtool.exe collabtool.nsi README NEWS COPYING
+nsis_installer: all collabtool.nsi README NEWS COPYING
 	cat README | unix2dos > README.TXT
 	cat NEWS | unix2dos > NEWS.TXT
 	cat COPYING | unix2dos > COPYING.TXT
+	$(STRIP) src/collabtool.exe
 	makensis collabtool.nsi 
 endif
