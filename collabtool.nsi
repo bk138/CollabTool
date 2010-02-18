@@ -48,7 +48,13 @@ section "Uninstall"
   delete $INSTDIR\collabtool.exe
   delete $INSTDIR\mingwm10.dll
   delete $INSTDIR\NEWS.TXT
-  delete $INSTDIR\README.TXT
+  delete $INSTDIR\README.TXT	
+  delete $INSTDIR\win2vnc.exe
+  delete $INSTDIR\vncviewer.exe
+  delete $INSTDIR\WinVNC.exe
+  delete $INSTDIR\VNCHooks.dll
+  delete $INSTDIR\README-contrib.txt
+  
   RMDir  $INSTDIR
  
   # delete shortcuts
